@@ -18,22 +18,26 @@ namespace LogicalPractices
             //int CountCharacter = SubWithoutRepCharacter.CountStringWithoutRepeating(charaters);
             //Console.WriteLine("Output charaters" + " " + CountCharacter);
             #endregion
-
             #region Sorted two Arrays
-            //int[] num1 = { 1, 3 };
-            //int[] num2 = {2};
-            int[] num1 = { 1, 2 };
-            int[] num2 = { 3, 4 };
-            //int[] MergingArrays = SortedArrays.FindSortedArrayMedian(num1, num2);
-            double median = SortedArrays.FindSortedArrayMedian(num1, num2);
-            Console.WriteLine(median);
-            //for(int i = 0; i< MergingArrays.Length; i++)
-            //{
-            //    Console.WriteLine(MergingArrays[i]);
-            //}
+            ////int[] num1 = { 1, 3 };
+            ////int[] num2 = {2};
+            //int[] num1 = { 1, 2 };
+            //int[] num2 = { 3, 4 };
+            ////int[] MergingArrays = SortedArrays.FindSortedArrayMedian(num1, num2);
+            //double median = SortedArrays.FindSortedArrayMedian(num1, num2);
+            //Console.WriteLine(median);
+            ////for(int i = 0; i< MergingArrays.Length; i++)
+            ////{
+            ////    Console.WriteLine(MergingArrays[i]);
+            ////}
 
             #endregion
-
+            #region PalindromicSubstring
+            PalindromicSubstring palindromicSubstring= new PalindromicSubstring();
+            string input = "babad";
+            string output = palindromicSubstring.FindLongestPalindrome(input);
+            Console.WriteLine(output);
+            #endregion
         }
     }
 }
