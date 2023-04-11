@@ -33,10 +33,19 @@ namespace LogicalPractices
 
             #endregion
             #region PalindromicSubstring
-            PalindromicSubstring palindromicSubstring= new PalindromicSubstring();
-            string input = "babad";
-            string output = palindromicSubstring.FindLongestPalindrome(input);
-            Console.WriteLine(output);
+            //PalindromicSubstring palindromicSubstring= new PalindromicSubstring();
+            //string input = "babad";
+            //string output = palindromicSubstring.FindLongestPalindrome(input);
+            //Console.WriteLine(output);
+            #endregion
+
+            #region ZigZag Conversion
+            ZigZagConversion ZZC = new ZigZagConversion();
+            string InPut = "PAYPALISHIRING";
+            int numRows = 4;
+
+            string Result = ZZC.ConvertStringToRowNumber(InPut,numRows);
+            Console.WriteLine(Result);
             #endregion
         }
     }
