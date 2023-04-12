@@ -86,9 +86,8 @@ namespace LogicalPractices
                 // Append the character to the corresponding row in the rows array:
                 Rows[CurrentRow].Append( c );
 
-                //Update the direction if needed. If currentRow is 0,
-                //set the direction to "down". If currentRow is numRows - 1,
-                //set the direction to "up":
+                //Update the direction if needed.If currentRow is 0, set the direction to "down".
+                //If currentRow is numRows - 1, set the direction to "up":
                 if (CurrentRow == 0)
                 {
                     Direction = "Down";

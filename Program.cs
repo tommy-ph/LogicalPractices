@@ -38,13 +38,19 @@ namespace LogicalPractices
             //string output = palindromicSubstring.FindLongestPalindrome(input);
             //Console.WriteLine(output);
             #endregion
-
             #region ZigZag Conversion
-            ZigZagConversion ZZC = new ZigZagConversion();
-            string InPut = "PAYPALISHIRING";
-            int numRows = 4;
+            //ZigZagConversion ZZC = new ZigZagConversion();
+            //string InPut = "PAYPALISHIRING";
+            //int numRows = 4;
 
-            string Result = ZZC.ConvertStringToRowNumber(InPut,numRows);
+            //string Result = ZZC.ConvertStringToRowNumber(InPut,numRows);
+            //Console.WriteLine(Result);
+            #endregion
+
+            #region Reverse Integer
+            ReverseInteger reverseInteger = new ReverseInteger();
+            int x = 1230;
+            int Result = reverseInteger.Reverse(x);
             Console.WriteLine(Result);
             #endregion
         }
