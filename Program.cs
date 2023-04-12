@@ -48,10 +48,10 @@ namespace LogicalPractices
             #endregion
 
             #region Reverse Integer
-            ReverseInteger reverseInteger = new ReverseInteger();
-            int x = 1230;
-            int Result = reverseInteger.Reverse(x);
-            Console.WriteLine(Result);
+            //ReverseInteger reverseInteger = new ReverseInteger();
+            //int x = 1230;
+            //int Result = reverseInteger.Reverse(x);
+            //Console.WriteLine(Result);
             #endregion
         }
     }
