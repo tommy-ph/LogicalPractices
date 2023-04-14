@@ -58,15 +58,25 @@ namespace LogicalPractices
             //bool result =containsDuplicate.ConDuplicate(nums);
             //Console.WriteLine(result);
             #endregion
-
             #region Valid Anagram
-            VAnagram vAnagram = new VAnagram();
-            string s = "anagram";
-            string t = "nagaram";
+            //VAnagram vAnagram = new VAnagram();
+            //string s = "anagram";
+            //string t = "nagaram";
 
-            bool Result = vAnagram.IsAnagram(s, t);
-            Console.WriteLine("-------------Print---------------");
-            Console.WriteLine(Result);
+            //bool Result = vAnagram.IsAnagram(s, t);
+            //Console.WriteLine("-------------Print---------------");
+            //Console.WriteLine(Result);
+            #endregion
+
+            #region Group the anagrams
+            GroupAnagrams groupAnagrams = new GroupAnagrams();
+            string[] Gstrings = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            IList<IList<string>> result= groupAnagrams.GrAnagrams(Gstrings);
+
+            foreach (IList<string> group in result)
+            {
+                Console.WriteLine($"[{string.Join(",", group)}]");
+            }
             #endregion
         }
     }
