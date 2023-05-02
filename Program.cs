@@ -46,12 +46,57 @@ namespace LogicalPractices
             //string Result = ZZC.ConvertStringToRowNumber(InPut,numRows);
             //Console.WriteLine(Result);
             #endregion
-
             #region Reverse Integer
-            ReverseInteger reverseInteger = new ReverseInteger();
-            int x = 1230;
-            int Result = reverseInteger.Reverse(x);
-            Console.WriteLine(Result);
+            //ReverseInteger reverseInteger = new ReverseInteger();
+            //int x = 1230;
+            //int Result = reverseInteger.Reverse(x);
+            //Console.WriteLine(Result);
+            #endregion
+            #region Contains Dupplicate
+            //ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+            //int[] nums = new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
+            //bool result =containsDuplicate.ConDuplicate(nums);
+            //Console.WriteLine(result);
+            #endregion
+            #region Valid Anagram
+            //VAnagram vAnagram = new VAnagram();
+            //string s = "anagram";
+            //string t = "nagaram";
+
+            //bool Result = vAnagram.IsAnagram(s, t);
+            //Console.WriteLine("-------------Print---------------");
+            //Console.WriteLine(Result);
+
+            #region Contains Dupplicate
+            //ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+            //int[] nums = new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
+            //bool result =containsDuplicate.ConDuplicate(nums);
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Valid Anagram
+            //VAnagram vAnagram = new VAnagram();
+            //string s = "anagram";
+            //string t = "nagaram";
+
+            //bool Result = vAnagram.IsAnagram(s, t);
+            //Console.WriteLine("-------------Print---------------");
+            //Console.WriteLine(Result);
+            #endregion
+            #endregion
+            #region Group the anagrams
+            //GroupAnagrams groupAnagrams = new GroupAnagrams();
+            //string[] Gstrings = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            //IList<IList<string>> result= groupAnagrams.GrAnagrams(Gstrings);
+
+            //foreach (IList<string> group in result)
+            //{
+            //    Console.WriteLine($"[{string.Join(",", group)}]");
+            //}
+            #endregion
+
+            #region Top K Frequent Elements
+
             #endregion
         }
     }
