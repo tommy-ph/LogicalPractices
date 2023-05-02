@@ -96,7 +96,12 @@ namespace LogicalPractices
             #endregion
 
             #region Top K Frequent Elements
+            int[] nums = { 1, 1, 1, 2, 2, 3, 3, 4, 4, 100000 };
+            int k = 2;
 
+            FrequentElements TopKFreqElements = new FrequentElements();
+            int[] Result = TopKFreqElements.TopKFrequent(nums, k);
+            Console.WriteLine(string.Join(", ", Result));
             #endregion
         }
     }
