@@ -25,8 +25,7 @@ namespace LogicalPractices
     {
         public int[] TopKFrequent(int[] nums, int k)
         {
-            //List[int] Count = { };
-            //Freq = [[]];
+            
             //Initialize a Dictionary to store the frequency of each element
             var FreqMap = new Dictionary<int, int>();
 
