@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 namespace LogicalPractices
 {
     public class Program
@@ -94,14 +96,39 @@ namespace LogicalPractices
             //    Console.WriteLine($"[{string.Join(",", group)}]");
             //}
             #endregion
-
             #region Top K Frequent Elements
-            int[] nums = { 1, 1, 1, 2, 2, 3, 3, 4, 4, 100000 };
-            int k = 2;
+            //int[] nums = { 1, 1, 1, 2, 2, 3, 3, 4, 4, 100000 };
+            //int k = 2;
 
-            FrequentElements TopKFreqElements = new FrequentElements();
-            int[] Result = TopKFreqElements.TopKFrequent(nums, k);
-            Console.WriteLine(string.Join(", ", Result));
+            //FrequentElements TopKFreqElements = new FrequentElements();
+            //int[] Result = TopKFreqElements.TopKFrequent(nums, k);
+            //Console.WriteLine(string.Join(", ", Result));
+            #endregion
+
+            #region Product of Array Except Self
+            int[] nums = { 1, 2, 3, 4 };
+
+            ProdArrayExceptSelf prod = new ProdArrayExceptSelf();
+
+            int[] output = prod.ProductExcepSelf(nums);
+
+            StringBuilder sb= new StringBuilder();
+            sb.Append("Output: [");
+            //foreach(int element in output)
+            //{
+            //    Console.WriteLine(element);
+            //}
+            for(int i = 0; i < output.Length; i++)
+            {
+                sb.Append(output[i]);
+                if(i < output.Length - 1)
+                {
+                    sb.Append(",");
+                }
+            }
+            sb.Append("]");
+            Console.WriteLine(sb.ToString());
+           
             #endregion
         }
     }
