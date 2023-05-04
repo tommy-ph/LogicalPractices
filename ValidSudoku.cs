@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -58,6 +59,28 @@ namespace LogicalPractices
                 }
             }
             return true;
+        }
+
+        public  void DisplaySudokuBoard(char[][] board)
+        {
+            Console.WriteLine("Sudoku Board:\n");
+            for (int r = 0; r< 9; r++)
+            {
+                if(r%3==0&&r!=0)
+                {
+                    Console.WriteLine("----------");
+                }
+
+                for(int c = 0; c < 9; c++)
+                {
+                    if(c % 3 == 0 && c != 0)
+                    {
+                        Console.Write(" | ");
+                    }
+                    Console.Write($" {board[r][c]} ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

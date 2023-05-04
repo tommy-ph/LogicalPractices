@@ -142,8 +142,11 @@ namespace LogicalPractices
             };
 
             ValidSudoku validSudoku = new ValidSudoku();
-            bool result = validSudoku.IsValidSudoku(board);
-            Console.WriteLine($"The given Sudoku board is {(result ? "True" : "False")}");
+            bool isValid = validSudoku.IsValidSudoku(board);
+
+            validSudoku.DisplaySudokuBoard(board);
+            Console.WriteLine($"\nThe given Sudoku board is {(isValid ? "valid" : "invalid")}");
+
             #endregion
         }
     }
