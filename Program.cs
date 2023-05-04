@@ -104,31 +104,46 @@ namespace LogicalPractices
             //int[] Result = TopKFreqElements.TopKFrequent(nums, k);
             //Console.WriteLine(string.Join(", ", Result));
             #endregion
-
             #region Product of Array Except Self
-            int[] nums = { 1, 2, 3, 4 };
+            //int[] nums = { 1, 2, 3, 4 };
 
-            ProdArrayExceptSelf prod = new ProdArrayExceptSelf();
+            //ProdArrayExceptSelf prod = new ProdArrayExceptSelf();
 
-            int[] output = prod.ProductExcepSelf(nums);
+            //int[] output = prod.ProductExcepSelf(nums);
 
-            StringBuilder sb= new StringBuilder();
-            sb.Append("Output: [");
-            //foreach(int element in output)
+            //StringBuilder sb= new StringBuilder();
+            //sb.Append("Output: [");
+
+            //for(int i = 0; i < output.Length; i++)
             //{
-            //    Console.WriteLine(element);
+            //    sb.Append(output[i]);
+            //    if(i < output.Length - 1)
+            //    {
+            //        sb.Append(",");
+            //    }
             //}
-            for(int i = 0; i < output.Length; i++)
+            //sb.Append("]");
+            //Console.WriteLine(sb.ToString());
+
+            #endregion
+
+            #region Valid Sudoku
+            char[][] board = new char[][]
             {
-                sb.Append(output[i]);
-                if(i < output.Length - 1)
-                {
-                    sb.Append(",");
-                }
-            }
-            sb.Append("]");
-            Console.WriteLine(sb.ToString());
-           
+                new char[] { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+                new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+                new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+                new char[] { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+                new char[] { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+                new char[] { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+                new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+                new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+                new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' },
+            };
+
+            ValidSudoku validSudoku = new ValidSudoku();
+            bool result = validSudoku.IsValidSudoku(board);
+            Console.WriteLine($"The given Sudoku board is {(result ? "True" : "False")}");
             #endregion
         }
     }
