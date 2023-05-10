@@ -126,27 +126,37 @@ namespace LogicalPractices
             //Console.WriteLine(sb.ToString());
 
             #endregion
-
             #region Valid Sudoku
-            char[][] board = new char[][]
-            {
-                new char[] { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
-                new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
-                new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
-                new char[] { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
-                new char[] { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
-                new char[] { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
-                new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
-                new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
-                new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' },
-            };
+            //char[][] board = new char[][]
+            //{
+            //    new char[] { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+            //    new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+            //    new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+            //    new char[] { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+            //    new char[] { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+            //    new char[] { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+            //    new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+            //    new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+            //    new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' },
+            //};
 
-            ValidSudoku validSudoku = new ValidSudoku();
-            bool isValid = validSudoku.IsValidSudoku(board);
+            //ValidSudoku validSudoku = new ValidSudoku();
+            //bool isValid = validSudoku.IsValidSudoku(board);
 
-            validSudoku.DisplaySudokuBoard(board);
-            Console.WriteLine($"\nThe given Sudoku board is {(isValid ? "valid" : "invalid")}");
+            //validSudoku.DisplaySudokuBoard(board);
+            //Console.WriteLine($"\nThe given Sudoku board is {(isValid ? "valid" : "invalid")}");
 
+            #endregion
+
+            #region Encode and Decode Strings
+            EncodeDecodeString code = new EncodeDecodeString();
+            List<string> output = new List<string> { "lint", "code", "love", "you" };//"we", ";", "say", ":", "yes", "#" 
+
+            string encoded = code.encode(output);
+            Console.WriteLine(encoded);
+
+            List<string> expected = code.decode(encoded);
+            Console.WriteLine(string.Join(", ", expected));
             #endregion
         }
     }
